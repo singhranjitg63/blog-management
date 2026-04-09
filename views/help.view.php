@@ -2,7 +2,10 @@
 <?php require("partials/nav.php"); ?>
 <?php require("partials/banner.php"); ?>
 <main>
-    <p>Hello Welcome to my help page</p>
+    <?php foreach($note as $post):?>
+    <li><?= $post['name']?></li>
+    <?php endforeach ;?>
+
 </main>
 
 <?php require("partials/footer.php"); ?>
