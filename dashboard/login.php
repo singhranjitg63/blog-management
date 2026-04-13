@@ -19,8 +19,8 @@
     <input type="password" class="form-control" name="password" id="inputPassword" >
   </div><br>
   <div class="col-12">
-    <a class="btn btn-primary" href="/dashboard">log-in</a>
-    <p class="mt-5 mb-3 text-muted">&copy; 2026–2027</p>
+    <a class="btn btn-primary" href="dashboard.php">log-in</a>
+    <p class="mt-5 mb-3 text-muted"> 2026–2027 TED IT</p>
   </div>
 </form>
 </div>

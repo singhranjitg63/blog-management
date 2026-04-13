@@ -3,7 +3,11 @@
 <?php require("partials/banner.php"); ?>
 <main>
     <?php foreach($note as $post):?>
-    <li><?= $post['name']?></li>
+    <li> 
+        <a href="note?id=<?= $post['id'] ?>" class="text-blue">
+            <?= $post['name']?>
+        </a>
+    </li>
     <?php endforeach ;?>
 
 </main>

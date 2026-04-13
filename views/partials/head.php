@@ -11,9 +11,6 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>demo</title>
-</head>
-
-<body style="margin: 10px;">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -30,3 +27,6 @@
       }
       
     </style>
+</head>
+
+<body style="margin: 10px;">
