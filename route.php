@@ -9,7 +9,11 @@ $route=[
     '/dashboard' => "dashboard/dashboard.php",
     '/help' => "controllers/help.php",
     '/note' => "controllers/note.php",
-    '/blog' =>"dashboard/blog.php"
+    '/blog' =>"dashboard/blog.dash.php",
+    '/users' =>"dashboard/users.dash.php",
+    '/users' =>"controllers/users.php",
+    '/blog' =>"controllers/blog.php",
+    
 ];
 function routeData($uri,$route){
 if(array_key_exists($uri,$route)){

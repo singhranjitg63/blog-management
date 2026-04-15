@@ -9,7 +9,7 @@
                 class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <div>
                     <h4 class="mb-3">Create new blogs</h4>
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" >
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <label for="title" class="form-label">Title</label>
@@ -66,21 +66,22 @@
 </div>
 
 <?php
-if(isset($_POST['submit'])){
-    $title = $_POST['title'];
-    $contant = $_POST['contant'];
-    $user_id = $_POST['user_id'];
-    $categorie_id = $_POST['categorie_id'];
-    $image = $_POST['image'];
 
-    try{
-        $sql = "INSERT INTO post(title,contant,user_id,categorie_id,image)
-        VALUES ('$title', '$contant', '$user_id','$categorie','$image')";
-        $dsn ->exec($sql);
-    }catch(PDOException $e){
-        echo $sql . "<br>" . $e->getMessage();
-    }
-}
+// if(isset($_POST['submit'])){
+//     $title = $_POST['titel'];
+//     $contant = $_POST['contant'];
+//     $user_id = $_POST['user_id'];
+//     $categorie_id = $_POST['categorie_id'];
+//     $image = $_POST['image'];
+
+//     try{
+//         $sql = "INSERT INTO post(titel,contant,user_id,categorie_id,image)
+//         VALUES ('$titel', '$contant', '$user_id','$categorie_id','$image')";
+//         $dsn ->exec($sql);
+//     }catch(PDOException $e){
+//         echo $sql . "<br>" . $e->getMessage();
+//     }
+// }
   
 
 ?>

@@ -2,6 +2,8 @@
 return [
           'host' => 'localhost',
           'port' => '3306',
-          'dbname' => 'phpLearn',
-          'charset' => 'utf8mb4'
+          'dbname' => 'phplearn',
+          'password' => '',
+          'charset' => 'utf8mb4',
+          
         ];

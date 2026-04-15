@@ -6,7 +6,7 @@ $data = new database($config);
 
 $header = "help ";
 
-$note = $data->query("SELECT * from orders WHERE user_id = 3")->fetchAll(); 
+$note = $data->query("SELECT * from users WHERE id = 1")->fetchAll(); 
  
 
 

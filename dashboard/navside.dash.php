@@ -3,15 +3,15 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link hover" aria-current="page" href="#">
+              <a class="nav-link hover" aria-current="page" href="/dashboard/dashboard.php">
                 <span data-feather="home"></span>
                 Home
               </a>
             </li>
             <li class="nav-item hover">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/users">
                 <span data-feather="file"></span>
-                User
+                Users
               </a>
             </li>
             <li class="nav-item hover">
