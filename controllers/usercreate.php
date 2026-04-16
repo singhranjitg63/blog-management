@@ -15,10 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             'password' => $_POST['password'],
             'role' => $_POST['role']
         ]);
+      header("location:/users");  
 }
 
 
-require "dashboard/users.dash.php"; 
+require "dashboard/user.create.php"; 
 
 
   

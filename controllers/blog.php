@@ -7,7 +7,7 @@ $data = new database($config);
 // die();
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-    $data->query('INSERT INTO users(title,contant,user_id,categorie_id,image)
+    $data->query('INSERT INTO posts(title,contant,user_id,categorie_id,image)
          VALUES (:title, :contant, :user_id, :categorie_id, :image)',[
             'title' => $_POST['title'],
             'contant' => $_POST['contant'],

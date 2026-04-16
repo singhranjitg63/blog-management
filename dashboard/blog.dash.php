@@ -9,7 +9,7 @@
                 class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <div>
                     <h4 class="mb-3">Create new blogs</h4>
-                    <form class="needs-validation" >
+                    <form class="needs-validation" action="/blog" method="post">
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <label for="title" class="form-label">Title</label>

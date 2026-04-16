@@ -10,8 +10,8 @@ $route=[
     '/help' => "controllers/help.php",
     '/note' => "controllers/note.php",
     '/blog' =>"dashboard/blog.dash.php",
-    '/users' =>"dashboard/users.dash.php",
-    '/users' =>"controllers/users.php",
+    '/user' =>"controllers/usercreate.php",
+    '/users' =>"controllers/usersdash.php",
     '/blog' =>"controllers/blog.php",
     
 ];
