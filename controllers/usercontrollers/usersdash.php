@@ -4,6 +4,5 @@ $data = new database($config);
 
 
 $results = $data->query('SELECT * from users')->fetchAll(); 
- 
 
-require "dashboard/users.dash.php";
+require "dashboard/userdashboard/users.dash.php";

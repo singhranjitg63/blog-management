@@ -1,8 +1,8 @@
-<?php require("head.dash.php"); ?>
-<?php require("headsearch.dash.php"); ?>
+<?php require("dashboard/head.dash.php"); ?>
+<?php require("dashboard/headsearch.dash.php"); ?>
 <div class="container-fluid">
     <div class="row">
-        <?php require("navside.dash.php"); ?>
+        <?php require("dashboard/navside.dash.php"); ?>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container">
@@ -29,7 +29,7 @@
                                 <td> <?= $result["role"] ?> </td>
                                 <td>
                                     <button class="btn btn-success">Update</button>
-                                    <button class="btn btn-primary">Delete</button>
+                                    <button class="btn btn-primary" name="delete">Delete</button>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

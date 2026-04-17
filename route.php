@@ -9,10 +9,13 @@ $route=[
     '/dashboard' => "dashboard/dashboard.php",
     '/help' => "controllers/help.php",
     '/note' => "controllers/note.php",
-    '/blog' =>"dashboard/blog.dash.php",
-    '/user' =>"controllers/usercreate.php",
-    '/users' =>"controllers/usersdash.php",
-    '/blog' =>"controllers/blog.php",
+
+    '/user' => "controllers/usercontrollers/usercreate.php",
+    '/users' => "controllers/usercontrollers/usersdash.php",
+    '/delete' => "controllers/usercontrollers/usersdelete.php",
+
+    '/blog' => "controllers/blogcontrollers/blogcreate.php",
+    '/blogs' => "controllers/blogcontrollers/blogsdash.php",
     
 ];
 function routeData($uri,$route){

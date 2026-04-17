@@ -3,31 +3,31 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link hover" aria-current="page" href="/dashboard/dashboard.php">
+              <a class="nav-link text-dark" aria-current="page" href="/dashboard/dashboard.php">
                 <span data-feather="home"></span>
                 Home
               </a>
             </li>
             <li class="nav-item hover">
-              <a class="nav-link" href="/users">
+              <a class="nav-link text-dark" href="/users">
                 <span data-feather="file"></span>
                 Users
               </a>
             </li>
             <li class="nav-item hover">
-              <a class="nav-link" href="/blog">
+              <a class="nav-link text-dark" href="/blogs">
                 <span data-feather="file"></span>
                 Blogs
               </a>
             </li>
             <li class="nav-item hover">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-dark" href="#">
                 <span data-feather="users"></span>
                 Customers
               </a>
             </li>
             <li class="nav-item hover">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-dark" href="#">
                 <span data-feather="users"></span>
                 Admin
               </a>
