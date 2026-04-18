@@ -28,12 +28,14 @@
                                 <td> <?= $result["email"] ?> </td>
                                 <td> <?= $result["role"] ?> </td>
                                 <td>
-                                    <button class="btn btn-success">Update</button>
-                                    <button class="btn btn-primary" name="delete">Delete</button>
+                                    <form action="#" method="POST" >
+                                        <button class="btn btn-success">Update</button>
+                                        <input type="hidden" name="id" value="<?= $result['id'] ?>">
+                                        <button class="btn btn-primary" name="delete">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
-                        <?php endforeach; ?>
-
+                            <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
