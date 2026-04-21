@@ -31,7 +31,7 @@
                                     <form action="#" method="POST" >
                                         <button class="btn btn-success">Update</button>
                                         <input type="hidden" name="id" value="<?= $result['id'] ?>">
-                                        <button class="btn btn-primary" name="delete">Delete</button>
+                                        <a href="/delete" class="btn btn-primary" name="delete">Delete</a>
                                     </form>
                                 </td>
                             </tr>

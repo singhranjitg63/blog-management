@@ -12,7 +12,7 @@ $route=[
 
     '/user' => "controllers/usercontrollers/usercreate.php",
     '/users' => "controllers/usercontrollers/usersdash.php",
-    '/delete' => "controllers/usercontrollers/usersdelete.php",
+    '/delete' => "controllers/usercontrollers/userdelete.php",
 
     '/blog' => "controllers/blogcontrollers/blogcreate.php",
     '/blogs' => "controllers/blogcontrollers/blogsdash.php",
