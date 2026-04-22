@@ -6,9 +6,10 @@ $route=[
     "/" => "controllers/index.php",
     '/about' => "controllers/about.php",
     '/contact' => "controllers/contact.php",
-    '/dashboard' => "dashboard/dashboard.php",
     '/help' => "controllers/help.php",
     '/note' => "controllers/note.php",
+    '/login' => "controllers/login.php",
+    '/dash' => "dashboard/dashboard.php",
 
     '/user' => "controllers/usercontrollers/usercreate.php",
     '/users' => "controllers/usercontrollers/usersdash.php",

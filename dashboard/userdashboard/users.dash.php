@@ -28,10 +28,10 @@
                                 <td> <?= $result["email"] ?> </td>
                                 <td> <?= $result["role"] ?> </td>
                                 <td>
-                                    <form action="#" method="POST" >
-                                        <button class="btn btn-success">Update</button>
+                                    <button class="btn btn-success">Update</button>
+                                    <form action="/delete" method="POST" >
                                         <input type="hidden" name="id" value="<?= $result['id'] ?>">
-                                        <a href="/delete" class="btn btn-primary" name="delete">Delete</a>
+                                        <button type="submit" class="btn btn-primary">DELETE</button>
                                     </form>
                                 </td>
                             </tr>
