@@ -1,4 +1,5 @@
 <?php
+require 'controllers/auth.php';
 
 $config = require('config.php');
 $data = new database($config);

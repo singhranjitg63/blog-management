@@ -9,7 +9,8 @@ $route=[
     '/help' => "controllers/help.php",
     '/note' => "controllers/note.php",
     '/login' => "controllers/login.php",
-    '/dash' => "dashboard/dashboard.php",
+    '/logout' => "controllers/logout.php",
+    '/dash' => "controllers/dashboard.php",
 
     '/user' => "controllers/usercontrollers/usercreate.php",
     '/users' => "controllers/usercontrollers/usersdash.php",
@@ -19,6 +20,7 @@ $route=[
     '/blogs' => "controllers/blogcontrollers/blogsdash.php",
     
 ];
+
 function routeData($uri,$route){
 if(array_key_exists($uri,$route)){
     require $route[$uri];

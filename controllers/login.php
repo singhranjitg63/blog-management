@@ -2,12 +2,13 @@
 // echo "<pre>";
 //     var_dump($_POST);
 // echo "</pre>";
+require 'Validator.php';
 session_start();
-if($user){
+if (isset($_SESSION['user'])) {
     header('location: /dash');
+    exit();
 }
 
-require 'Validator.php';
 $config = require('config.php');
 $data = new database($config);
 

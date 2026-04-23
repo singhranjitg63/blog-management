@@ -4,9 +4,14 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <?php if($_SESSION['user'] ?? false) :?>
   <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">Sign out</a>
-    </div>
+    <form action="/logout" method="post">
+      <div class="nav-item text-nowrap">
+        <input type="hidden" name="_method" value="DELETE"/>
+        <button class="nav-link px-3" >Logout</button>
+      </div>
+    </form>
   </div>
+  <?php endif ; ?>
 </header>

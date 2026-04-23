@@ -1,5 +1,6 @@
 <?php
-
+require 'controllers/usercontrollers/userNotCreate.php';
+require 'controllers/auth.php';
 require "Validator.php";
 
 $config = require('config.php');
