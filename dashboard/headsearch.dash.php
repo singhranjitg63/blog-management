@@ -7,9 +7,9 @@
   <?php if($_SESSION['user'] ?? false) :?>
   <div class="navbar-nav">
     <form action="/logout" method="post">
-      <div class="nav-item text-nowrap">
+      <div class="nav-item ">
         <input type="hidden" name="_method" value="DELETE"/>
-        <button class="nav-link px-3" >Logout</button>
+        <button class="nav-link px-3 text-dark" >Logout</button>
       </div>
     </form>
   </div>

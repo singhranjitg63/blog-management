@@ -1,8 +1,7 @@
 <?php
-require 'controllers/usercontrollers/userNotCreate.php';
+// require 'controllers/usercontrollers/userNotCreate.php';
 require 'controllers/auth.php';
 require "Validator.php";
-
 $config = require('config.php');
 $data = new database($config);
 
@@ -10,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
     if (!Validator::name($_POST['name'], 1, 255)) {
         $errors['name'] = 'please enter the name.';
-    }
-    if (!Validator::email($_POST['email'], 1, 255)) {
+        }
+        if (!Validator::email($_POST['email'], 1, 255)) {
         $errors['email'] = 'please enter your email.';
     }
     if (!Validator::password($_POST['password'], 1, 9)) {
@@ -23,13 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
         $data->query(
             'INSERT INTO users(name,email,password,role) 
-    VALUES(:name , :email , :password , :role)',
+            VALUES(:name , :email , :password , :role)',
             [
                 'name' => $_POST['name'],
                 'email' => $_POST['email'],
                 'password' => password_hash($_POST['password'], PASSWORD_BCRYPT),
                 'role' => $_POST['role']
-            ]
+                ]
         );
         header("location:/users");
     }

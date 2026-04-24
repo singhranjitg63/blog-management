@@ -41,7 +41,11 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <label for="role" class="form-label">Role</label>
-                                                    <input type="role" class="form-control" name="role" id="role">
+                                                    <!-- <input type="role" class="form-control" name="role" id="role"> -->
+                                                    <select name="role" class="form-control" id="role">
+                                                        <option  value="subscriber">Subscriber</option>
+                                                        <option  value="author">Author</option>
+                                                    </select>
                                                     <?php if (isset($errors['role'])): ?>
                                                         <p class="text-danger"><?= $errors['role'] ?></p>
                                                     <?php endif; ?>

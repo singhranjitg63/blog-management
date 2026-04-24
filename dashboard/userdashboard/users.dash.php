@@ -28,10 +28,10 @@
                                 <td> <?= $result["email"] ?> </td>
                                 <td> <?= $result["role"] ?> </td>
                                 <td>
-                                    <button class="btn btn-success">Update</button>
+                                    <button class="btn btn-success" href="/update?id=<?php echo $result['id']; ?>">Update</button>
                                     <form action="/delete" method="POST" >
                                         <input type="hidden" name="id" value="<?= $result['id'] ?>">
-                                        <button type="submit" class="btn btn-primary">DELETE</button>
+                                        <button type="submit" class="btn btn-primary" onclick="return deleteButton()">DELETE</button>
                                     </form>
                                 </td>
                             </tr>
@@ -42,7 +42,16 @@
         </main>
     </div>
 </div>
+<!-- <?php
 
-
+echo "<pre>";
+var_dump($_GET);
+echo "</pre>";
+?> -->
+<script>
+function deleteButton(){
+    return confirm('Are you delete this user ?');
+}
+</script>
 
 <?php require("dashboard/footer.dash.php"); ?>
