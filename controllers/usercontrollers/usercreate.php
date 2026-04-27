@@ -1,7 +1,7 @@
 <?php
-// require 'controllers/usercontrollers/userNotCreate.php';
-require 'controllers/auth.php';
+require 'controllers/auth.php';     //widout login not user go in dashboard.
 require "Validator.php";
+
 $config = require('config.php');
 $data = new database($config);
 
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!Validator::role($_POST['role'], 1, 255)) {
         $errors['role'] = 'please enter the role of user.';
     }
-    if (empty($errors)) {
+    if (empty($errors)){
         $data->query(
             'INSERT INTO users(name,email,password,role) 
             VALUES(:name , :email , :password , :role)',

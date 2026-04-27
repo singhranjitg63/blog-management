@@ -4,7 +4,7 @@
 // echo "</pre>";
 require 'Validator.php';
 session_start();
-if (isset($_SESSION['user'])) {
+if (isset($_SESSION['user'])) {          // after login can't back login page.
     header('location: /dash');
     exit();
 }
@@ -30,22 +30,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'email' => $email
     ])->fetch();
 
-    // var_dump($user);
     if ($user) {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user'] = [
                 'id' => $user['id'],
                 'email' => $user['email'],
-                'password' => $user['password']
+                'password' => $user['password'],
+                'role' => $user['role']
             ];
-            header('location: /dash');
+            if ($user['role'] !== 'admin') {
+                header('location: /blogs');
+            } else {
+                header('location: /dash');
+            }
             exit();
-            }
-            if (! $user) {
-                $errors['email'] = 'This email is not valid enter right email';
-            }else{
-                $errors['password'] = 'This password is not valid enter right password';
-            }
+        } else {
+            $errors['email'] = 'This email is not valid enter right email';
         }
+    } else {
+        $errors['password'] = 'This password is not valid enter right password';
+    }
 }
 require "dashboard/login.php";
